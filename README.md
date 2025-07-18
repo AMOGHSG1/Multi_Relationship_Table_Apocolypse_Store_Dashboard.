@@ -32,7 +32,7 @@ Data was sourced from the public dataset available on GitHub:
 
 ---
 
-## 🛠Data Modeling
+## Data Modeling
 
 I used **Power BI's data model** features to join **4 related tables** using multi-relationship schema. Key transformations and modeling steps:
 
@@ -74,7 +74,7 @@ Thanks to **[Alex The Analyst](https://github.com/AlexTheAnalyst)** for providin
 
 ---
 
-## 📌 License
+##  License
 
 This project is for educational purposes. Dataset and visuals are publicly sourced and freely modifiable.
 
