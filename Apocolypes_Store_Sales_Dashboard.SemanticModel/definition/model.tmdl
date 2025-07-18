@@ -1,0 +1,25 @@
+model Model
+	culture: en-IN
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-IN
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation PBI_QueryOrder = ["Apocolypse Sales","Apocolypse Store","Customer Buyer Information","Customer Information"]
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBIDesktopVersion = 2.144.1378.0 (25.06)+cba1e61f16ea36d44901f06fa446299040122394
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table 'Apocolypse Sales'
+ref table DateTableTemplate_780c17f6-b1b4-4e0a-b578-adc32b486a8b
+ref table LocalDateTable_8bf430f4-36b2-4ca9-90b8-e6f3236c2dae
+ref table 'Apocolypse Store'
+ref table 'Customer Buyer Information'
+ref table 'Customer Information'
+
+ref cultureInfo en-IN
+

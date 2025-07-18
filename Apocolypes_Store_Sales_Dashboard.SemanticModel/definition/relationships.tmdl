@@ -1,0 +1,20 @@
+relationship d37bfd9d-fb89-4985-8f5d-01b36cde0ad3
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'Apocolypse Sales'.'Date Purchased'
+	toColumn: LocalDateTable_8bf430f4-36b2-4ca9-90b8-e6f3236c2dae.Date
+
+relationship AutoDetected_b5485e45-bfe6-4570-8870-decc94221e0a
+	crossFilteringBehavior: bothDirections
+	fromColumn: 'Apocolypse Sales'.Customer
+	toColumn: 'Customer Information'.Customer
+
+relationship AutoDetected_0be2c2df-0a4c-4efc-ba52-8cc0e9dcfa02
+	crossFilteringBehavior: bothDirections
+	fromColumn: 'Apocolypse Sales'.'Product ID'
+	toColumn: 'Apocolypse Store'.'Product ID'
+
+relationship 3f2b7c78-d46e-6b4a-b795-ae1d27b75c24
+	crossFilteringBehavior: bothDirections
+	fromColumn: 'Customer Buyer Information'.'Product ID Purchased'
+	toColumn: 'Apocolypse Store'.'Product ID'
+

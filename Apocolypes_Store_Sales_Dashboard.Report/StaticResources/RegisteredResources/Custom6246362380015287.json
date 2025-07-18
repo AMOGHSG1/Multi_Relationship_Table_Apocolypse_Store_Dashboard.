@@ -1,0 +1,47 @@
+{
+  "name": "Custom",
+  "visualStyles": {
+    "page": {
+      "*": {
+        "background": [
+          {
+            "color": {
+              "solid": {
+                "color": "#FFFFFF"
+              }
+            },
+            "transparency": 100
+          }
+        ],
+        "outspace": [
+          {
+            "transparency": 0
+          }
+        ]
+      }
+    },
+    "*": {
+      "*": {
+        "background": [
+          {
+            "transparency": 100
+          }
+        ]
+      }
+    }
+  },
+  "foreground": "#FFFFFF",
+  "foregroundNeutralSecondary": "#00B2F1",
+  "foregroundNeutralTertiary": "#00B2F1",
+  "textClasses": {
+    "label": {
+      "color": "#00B2F1"
+    },
+    "callout": {
+      "color": "#00B2F1"
+    },
+    "title": {
+      "color": "#8DD5EE"
+    }
+  }
+}

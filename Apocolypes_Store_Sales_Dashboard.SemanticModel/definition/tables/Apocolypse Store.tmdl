@@ -1,0 +1,87 @@
+table 'Apocolypse Store'
+	lineageTag: 80589c7b-6922-4ed2-a245-19c6e6272939
+
+	measure 'sum of production cost' = SUM('Apocolypse Store'[Production Cost])
+		lineageTag: d8b74cec-6e3b-49f1-ba4a-1fea8063aa2a
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'sum of total puchased' = SUM('Customer Buyer Information'[Total Purchased])
+		formatString: 0
+		lineageTag: 777fbf51-b65b-43aa-90a7-1e64a7acae7e
+
+	measure 'measure Income' = [sum of total puchased]-[sum of production cost]
+		lineageTag: 41d8ef33-396c-489a-9078-65e72857bedd
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Total Profit' = ```
+			
+			SUMX(
+			    'Apocolypse Sales',
+			    ('Apocolypse Sales'[Units Sold]) * 
+			    (RELATED('Apocolypse Store'[Price]) - RELATED('Apocolypse Store'[Production Cost]))
+			)
+			```
+		lineageTag: 7d7583fd-579b-4392-85de-0abc123fe178
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure ProductionCost_K = ```
+			
+			VAR TotalCost = SUM('Apocolypse Store'[Production Cost])
+			RETURN FORMAT(TotalCost / 1000, "0.00") & "K"
+			
+			```
+		lineageTag: 603738ea-6264-46f5-b8ba-3dd000f966c4
+
+	column 'Product ID'
+		dataType: int64
+		formatString: 0
+		lineageTag: 9e2446b8-d62a-4261-90a9-e5184e2175d3
+		summarizeBy: none
+		sourceColumn: Product ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Product Name'
+		dataType: string
+		lineageTag: bff6a85e-f567-4cd5-9e6d-4879c9210134
+		summarizeBy: none
+		sourceColumn: Product Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column Price
+		dataType: double
+		lineageTag: f0f9da60-0143-4c6d-918a-9002fd0d61a4
+		summarizeBy: sum
+		sourceColumn: Price
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Production Cost'
+		dataType: double
+		lineageTag: 1d8399b9-e53a-4440-b91b-4f71c9ac8734
+		summarizeBy: sum
+		sourceColumn: Production Cost
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition 'Apocolypse Store' = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents("C:\Users\never\OneDrive\Desktop\Multi_Table_Relationship_with_all_viualisation_dashboard\Apocolypse Food Prep - Visualizations Tutorial.xlsx"), null, true),
+				    #"Apocolypse Store_Sheet" = Source{[Item="Apocolypse Store",Kind="Sheet"]}[Data],
+				    #"Promoted Headers" = Table.PromoteHeaders(#"Apocolypse Store_Sheet", [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"Product ID", Int64.Type}, {"Product Name", type text}, {"Price", type number}, {"Production Cost", type number}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+

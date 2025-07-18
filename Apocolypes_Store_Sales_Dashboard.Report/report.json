@@ -1,0 +1,391 @@
+{
+  "config": "{\"version\":\"5.59\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":\"5.65\",\"type\":2},\"customTheme\":{\"name\":\"Custom6246362380015287.json\",\"version\":\"5.65\",\"type\":1}},\"activeSectionIndex\":8,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":0,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true,\"filterPaneHiddenInEditMode\":false},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "pods": [
+    {
+      "boundSection": "bc7ebef3dd1f18251aea",
+      "config": "{}",
+      "name": "da1d804e96b272f8a0f3"
+    }
+  ],
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "3YOKOG_tvZM36GcGrPzT9g_store_l8676482781968519.png",
+            "path": "3YOKOG_tvZM36GcGrPzT9g_store_l8676482781968519.png",
+            "type": 100
+          },
+          {
+            "name": "Custom6246362380015287.json",
+            "path": "Custom6246362380015287.json",
+            "type": 201
+          },
+          {
+            "name": "Dashboard_Background7741262482684939.png",
+            "path": "Dashboard_Background7741262482684939.png",
+            "type": 100
+          },
+          {
+            "name": "Screenshot_2025-07-17_1036038178054224115776.png",
+            "path": "Screenshot_2025-07-17_1036038178054224115776.png",
+            "type": 100
+          }
+        ],
+        "name": "RegisteredResources",
+        "type": 1
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU10",
+            "path": "BaseThemes/CY24SU10.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Total Products Sold",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "250570d520f19fada4aa",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"2209be1a092aee427b06\",\"layouts\":[{\"id\":0,\"position\":{\"x\":9.72644376899696,\"y\":0,\"z\":0,\"width\":403.6474164133739,\"height\":359.87841945288756,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"barChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Apocolypse Store.Product Name\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(Apocolypse Sales.Units Sold)\"}],\"Series\":[{\"queryRef\":\"Apocolypse Store.Product Name\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"Apocolypse Store\",\"Type\":0},{\"Name\":\"a1\",\"Entity\":\"Apocolypse Sales\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Product Name\"},\"Name\":\"Apocolypse Store.Product Name\",\"NativeReferenceName\":\"Product Name\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a1\"}},\"Property\":\"Units Sold\"}},\"Function\":0},\"Name\":\"Sum(Apocolypse Sales.Units Sold)\",\"NativeReferenceName\":\"Sum of Units Sold\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a1\"}},\"Property\":\"Units Sold\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Total Products Sold'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'left'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 359.88,
+          "width": 403.65,
+          "x": 9.73,
+          "y": 0.00,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "DASHBOARD",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "711f7cf5afd89683b2ac",
+      "ordinal": 8,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"126e596b5d49ea7f5a2a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":19.625212947189098,\"y\":17.17206132879046,\"z\":12000,\"width\":99.35264054514481,\"height\":103.03236797274276,\"tabOrder\":11000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"3YOKOG_tvZM36GcGrPzT9g_store_l8676482781968519.png\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 103.03,
+          "width": 99.35,
+          "x": 19.63,
+          "y": 17.17,
+          "z": 12000.00
+        },
+        {
+          "config": "{\"name\":\"41ef78e6427c9824c556\",\"layouts\":[{\"id\":0,\"position\":{\"x\":35.570698466780236,\"y\":434.20783645655877,\"z\":6000,\"width\":315.22998296422486,\"height\":260.03407155025553,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"hundredPercentStackedColumnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Apocolypse Sales.Customer\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(Apocolypse Sales.Units Sold)\"}],\"Series\":[{\"queryRef\":\"Apocolypse Store.Product Name\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"Apocolypse Sales\",\"Type\":0},{\"Name\":\"a1\",\"Entity\":\"Apocolypse Store\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Customer\"},\"Name\":\"Apocolypse Sales.Customer\",\"NativeReferenceName\":\"Customer\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Units Sold\"}},\"Function\":0},\"Name\":\"Sum(Apocolypse Sales.Units Sold)\",\"NativeReferenceName\":\"Sum of Units Sold\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a1\"}},\"Property\":\"Product Name\"},\"Name\":\"Apocolypse Store.Product Name\",\"NativeReferenceName\":\"Product Name\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Units Sold\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"optimizeLabelDisplay\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"labelContainerMaxWidth\":{\"expr\":{\"Literal\":{\"Value\":\"400D\"}}},\"labelOverflow\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"categoryAxis\":[{\"properties\":{\"titleText\":{\"expr\":{\"Literal\":{\"Value\":\"'Customers'\"}}}}}],\"valueAxis\":[{\"properties\":{\"titleText\":{\"expr\":{\"Literal\":{\"Value\":\"'Average Of Product Sold'\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Products Sold By The Customer'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 260.03,
+          "width": 315.23,
+          "x": 35.57,
+          "y": 434.21,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"637ee5d948c3467d4f07\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":500,\"width\":1279.3185689948893,\"height\":718.7734241908007,\"tabOrder\":13000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"Dashboard_Background7741262482684939.png\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 718.77,
+          "width": 1279.32,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 500.00
+        },
+        {
+          "config": "{\"name\":\"64b6eedef2195b418a44\",\"layouts\":[{\"id\":0,\"position\":{\"x\":118.9778534923339,\"y\":30.664395229982965,\"z\":11000,\"width\":352.02725724020445,\"height\":74.82112436115844,\"tabOrder\":10000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"APOCOLYPES STORE SALES DASHBOARD\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontFamily\":\"Verdana\",\"fontSize\":\"20pt\",\"color\":\"#a6d7ed\"}}],\"horizontalTextAlignment\":\"center\"}]}}]}}}",
+          "filters": "[]",
+          "height": 74.82,
+          "width": 352.03,
+          "x": 118.98,
+          "y": 30.66,
+          "z": 11000.00
+        },
+        {
+          "config": "{\"name\":\"68de1c3211da3d4ddbe3\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":0,\"width\":1279.4962216624683,\"height\":720,\"tabOrder\":12000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"Screenshot_2025-07-17_1036038178054224115776.png\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 720.00,
+          "width": 1279.50,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"72cbde0d8989a2f8e2b2\",\"layouts\":[{\"id\":0,\"position\":{\"x\":483.3333333333333,\"y\":21.11111111111111,\"z\":1000,\"width\":171.11111111111111,\"height\":98.88888888888889,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(Apocolypse Sales.Units Sold)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"Apocolypse Sales\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Units Sold\"}},\"Function\":0},\"Name\":\"Sum(Apocolypse Sales.Units Sold)\",\"NativeReferenceName\":\"Sum of Units Sold\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Units Sold\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"41D\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Units Sold'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"22D\"}}}}}],\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 98.89,
+          "width": 171.11,
+          "x": 483.33,
+          "y": 21.11,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"793c895f1de6063ab3dc\",\"layouts\":[{\"id\":0,\"position\":{\"x\":888.8888888888889,\"y\":21.11111111111111,\"z\":3000,\"width\":181.11111111111111,\"height\":98.88888888888889,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(Customer Buyer Information.Total Purchased)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Customer Buyer Information\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Total Purchased\"}},\"Function\":0},\"Name\":\"Sum(Customer Buyer Information.Total Purchased)\",\"NativeReferenceName\":\"Sum of Total Purchased\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Total Purchased\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"41D\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Total Income'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"22D\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 98.89,
+          "width": 181.11,
+          "x": 888.89,
+          "y": 21.11,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"8877c3d4a37df0f0cafd\",\"layouts\":[{\"id\":0,\"position\":{\"x\":870.8688245315162,\"y\":152.0954003407155,\"z\":9000,\"width\":377.78534923339015,\"height\":260.03407155025553,\"tabOrder\":8000}}],\"singleVisual\":{\"visualType\":\"donutChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Customer Buyer Information.State\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(Apocolypse Sales.Units Sold)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"Apocolypse Sales\",\"Type\":0},{\"Name\":\"c\",\"Entity\":\"Customer Buyer Information\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Units Sold\"}},\"Function\":0},\"Name\":\"Sum(Apocolypse Sales.Units Sold)\",\"NativeReferenceName\":\"Sum of Units Sold\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"State\"},\"Name\":\"Customer Buyer Information.State\",\"NativeReferenceName\":\"State\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Units Sold\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'inside'\"}}},\"labelStyle\":{\"expr\":{\"Literal\":{\"Value\":\"'Data value, percent of total'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"8D\"}}}}}],\"legend\":[{\"properties\":{\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'RightCenter'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"8D\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Total Products Sold by State'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 260.03,
+          "width": 377.79,
+          "x": 870.87,
+          "y": 152.10,
+          "z": 9000.00
+        },
+        {
+          "config": "{\"name\":\"95435a6850f4bb863096\",\"layouts\":[{\"id\":0,\"position\":{\"x\":376,\"y\":152,\"z\":8000,\"width\":464,\"height\":256,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"lineClusteredColumnComboChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Apocolypse Store.Product Name\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(Apocolypse Store.Price)\"}],\"Y2\":[{\"queryRef\":\"Sum(Apocolypse Store.Production Cost)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"Apocolypse Store\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Product Name\"},\"Name\":\"Apocolypse Store.Product Name\",\"NativeReferenceName\":\"Product Name\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Production Cost\"}},\"Function\":0},\"Name\":\"Sum(Apocolypse Store.Production Cost)\",\"NativeReferenceName\":\"Sum of Production Cost\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Price\"}},\"Function\":0},\"Name\":\"Sum(Apocolypse Store.Price)\",\"NativeReferenceName\":\"Sum of Price\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Price\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"valueAxis\":[{\"properties\":{\"titleText\":{\"expr\":{\"Literal\":{\"Value\":\"'Price of a Product'\"}}}}}],\"categoryAxis\":[{\"properties\":{\"titleText\":{\"expr\":{\"Literal\":{\"Value\":\"'Product'\"}}}}}],\"lineStyles\":[{\"properties\":{\"areaShow\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"legend\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"8D\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Selling Price and Production Cost by Product '\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 256.00,
+          "width": 464.00,
+          "x": 376.00,
+          "y": 152.00,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"b2e5d793a26d6cf5d0f5\",\"layouts\":[{\"id\":0,\"position\":{\"x\":374.44444444444446,\"y\":443.3333333333333,\"z\":7000,\"width\":465.55555555555554,\"height\":243.33333333333331,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Apocolypse Sales.Date Purchased.Variation.Date Hierarchy.Day\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(Apocolypse Sales.Units Sold)\"}],\"Series\":[{\"queryRef\":\"Apocolypse Store.Product Name\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"Apocolypse Sales\",\"Type\":0},{\"Name\":\"a1\",\"Entity\":\"Apocolypse Store\",\"Type\":0}],\"Select\":[{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Name\":\"Variation\",\"Property\":\"Date Purchased\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Day\"},\"Name\":\"Apocolypse Sales.Date Purchased.Variation.Date Hierarchy.Day\",\"NativeReferenceName\":\"Date Purchased Day\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Units Sold\"}},\"Function\":0},\"Name\":\"Sum(Apocolypse Sales.Units Sold)\",\"NativeReferenceName\":\"Sum of Units Sold\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a1\"}},\"Property\":\"Product Name\"},\"Name\":\"Apocolypse Store.Product Name\",\"NativeReferenceName\":\"Product Name\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Name\":\"Variation\",\"Property\":\"Date Purchased\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Day\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"valueAxis\":[{\"properties\":{\"titleText\":{\"expr\":{\"Literal\":{\"Value\":\"'Units Sold'\"}}}}}],\"legend\":[{\"properties\":{\"matchLineColor\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"8D\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Products Sold by Day '\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 243.33,
+          "width": 465.56,
+          "x": 374.44,
+          "y": 443.33,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"b320a93f68841c0a36fb\",\"layouts\":[{\"id\":0,\"position\":{\"x\":863.3333333333333,\"y\":448.88888888888886,\"z\":10000,\"width\":385.55555555555554,\"height\":237.77777777777777,\"tabOrder\":9000}}],\"singleVisual\":{\"visualType\":\"scatterChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Apocolypse Store.Product Name\",\"active\":true}],\"X\":[{\"queryRef\":\"Sum(Apocolypse Store.Production Cost)\",\"active\":true}],\"Series\":[{\"queryRef\":\"Apocolypse Store.Product Name\"}],\"Y\":[{\"queryRef\":\"Sum(Apocolypse Store.Price)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"Apocolypse Store\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Product Name\"},\"Name\":\"Apocolypse Store.Product Name\",\"NativeReferenceName\":\"Product Name\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Production Cost\"}},\"Function\":0},\"Name\":\"Sum(Apocolypse Store.Production Cost)\",\"NativeReferenceName\":\"Production Cost\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Price\"}},\"Function\":0},\"Name\":\"Sum(Apocolypse Store.Price)\",\"NativeReferenceName\":\"Sum of Price\"}]},\"columnProperties\":{\"Sum(Apocolypse Store.Production Cost)\":{\"displayName\":\"Production Cost\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"legend\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"8D\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Production Cost and Selling Price by Product'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 237.78,
+          "width": 385.56,
+          "x": 863.33,
+          "y": 448.89,
+          "z": 10000.00
+        },
+        {
+          "config": "{\"name\":\"cbcf7c5b372af2c2e52a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":35.570698466780236,\"y\":152.0954003407155,\"z\":5000,\"width\":323.8160136286201,\"height\":260.03407155025553,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"barChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Apocolypse Store.Product Name\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(Apocolypse Sales.Units Sold)\"}],\"Series\":[{\"queryRef\":\"Apocolypse Store.Product Name\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"Apocolypse Store\",\"Type\":0},{\"Name\":\"a1\",\"Entity\":\"Apocolypse Sales\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Product Name\"},\"Name\":\"Apocolypse Store.Product Name\",\"NativeReferenceName\":\"Product Name\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a1\"}},\"Property\":\"Units Sold\"}},\"Function\":0},\"Name\":\"Sum(Apocolypse Sales.Units Sold)\",\"NativeReferenceName\":\"Sum of Units Sold\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a1\"}},\"Property\":\"Units Sold\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"legend\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"8D\"}}}}}],\"dataPoint\":[{\"properties\":{\"borderShow\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"categoryAxis\":[{\"properties\":{\"innerPadding\":{\"expr\":{\"Literal\":{\"Value\":\"20L\"}}}}}],\"layout\":[{\"properties\":{\"stackedGapSize\":{\"expr\":{\"Literal\":{\"Value\":\"2D\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Total Products Sold'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'left'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 260.03,
+          "width": 323.82,
+          "x": 35.57,
+          "y": 152.10,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"db3e3fc136fa8c228200\",\"layouts\":[{\"id\":0,\"position\":{\"x\":664,\"y\":24,\"z\":2000,\"width\":224,\"height\":96,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(Apocolypse Store.Production Cost)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"Apocolypse Store\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Production Cost\"}},\"Function\":0},\"Name\":\"Sum(Apocolypse Store.Production Cost)\",\"NativeReferenceName\":\"Sum of Production Cost\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Production Cost\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"41D\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Production Cost'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"22D\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 96.00,
+          "width": 224.00,
+          "x": 664.00,
+          "y": 24.00,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"e16c4375337a3e25e77f\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1078.888888888889,\"y\":21.11111111111111,\"z\":4000,\"width\":170,\"height\":98.88888888888889,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Apocolypse Store.Total Profit\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"Apocolypse Store\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Profit\"},\"Name\":\"Apocolypse Store.Total Profit\",\"NativeReferenceName\":\"Total Profit\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Profit\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"41D\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Profit'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"22D\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 98.89,
+          "width": 170.00,
+          "x": 1078.89,
+          "y": 21.11,
+          "z": 4000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Production Cost and Selling Price by Product",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "767dcaa16d7ac4f28cdf",
+      "ordinal": 5,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"a581f22e3918cf97d9f3\",\"layouts\":[{\"id\":0,\"position\":{\"x\":24.316109422492403,\"y\":0,\"z\":0,\"width\":595.258358662614,\"height\":502.8571428571429,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"scatterChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Apocolypse Store.Product Name\",\"active\":true}],\"X\":[{\"queryRef\":\"Sum(Apocolypse Store.Production Cost)\",\"active\":true}],\"Series\":[{\"queryRef\":\"Apocolypse Store.Product Name\"}],\"Y\":[{\"queryRef\":\"Sum(Apocolypse Store.Price)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"Apocolypse Store\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Product Name\"},\"Name\":\"Apocolypse Store.Product Name\",\"NativeReferenceName\":\"Product Name\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Production Cost\"}},\"Function\":0},\"Name\":\"Sum(Apocolypse Store.Production Cost)\",\"NativeReferenceName\":\"Production Cost\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Price\"}},\"Function\":0},\"Name\":\"Sum(Apocolypse Store.Price)\",\"NativeReferenceName\":\"Sum of Price\"}]},\"columnProperties\":{\"Sum(Apocolypse Store.Production Cost)\":{\"displayName\":\"Production Cost\"}},\"drillFilterOtherVisuals\":true,\"objects\":{},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Production Cost and Selling Price by Product'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 502.86,
+          "width": 595.26,
+          "x": 24.32,
+          "y": 0.00,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Products Sold By The Customer",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "87e73f14f24452d1b9fd",
+      "ordinal": 1,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"85f5f4311378b0a505ca\",\"layouts\":[{\"id\":0,\"position\":{\"x\":9.72644376899696,\"y\":0,\"z\":0,\"width\":566.0790273556231,\"height\":548.5714285714286,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"hundredPercentStackedColumnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Apocolypse Sales.Customer\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(Apocolypse Sales.Units Sold)\"}],\"Series\":[{\"queryRef\":\"Apocolypse Store.Product Name\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"Apocolypse Sales\",\"Type\":0},{\"Name\":\"a1\",\"Entity\":\"Apocolypse Store\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Customer\"},\"Name\":\"Apocolypse Sales.Customer\",\"NativeReferenceName\":\"Customer\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Units Sold\"}},\"Function\":0},\"Name\":\"Sum(Apocolypse Sales.Units Sold)\",\"NativeReferenceName\":\"Sum of Units Sold\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a1\"}},\"Property\":\"Product Name\"},\"Name\":\"Apocolypse Store.Product Name\",\"NativeReferenceName\":\"Product Name\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Units Sold\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"categoryAxis\":[{\"properties\":{\"titleText\":{\"expr\":{\"Literal\":{\"Value\":\"'Customers'\"}}}}}],\"valueAxis\":[{\"properties\":{\"titleText\":{\"expr\":{\"Literal\":{\"Value\":\"'Average Of Product Sold'\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Products Sold By The Customer'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 548.57,
+          "width": 566.08,
+          "x": 9.73,
+          "y": 0.00,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Products Sold by Day ",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "a9fc54918a531270ce0e",
+      "ordinal": 2,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"69bf7520ca906094278e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":9.72644376899696,\"y\":0,\"z\":0,\"width\":616.6565349544073,\"height\":392.9483282674772,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Apocolypse Sales.Date Purchased.Variation.Date Hierarchy.Day\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(Apocolypse Sales.Units Sold)\"}],\"Series\":[{\"queryRef\":\"Apocolypse Store.Product Name\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"Apocolypse Sales\",\"Type\":0},{\"Name\":\"a1\",\"Entity\":\"Apocolypse Store\",\"Type\":0}],\"Select\":[{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Name\":\"Variation\",\"Property\":\"Date Purchased\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Day\"},\"Name\":\"Apocolypse Sales.Date Purchased.Variation.Date Hierarchy.Day\",\"NativeReferenceName\":\"Date Purchased Day\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Units Sold\"}},\"Function\":0},\"Name\":\"Sum(Apocolypse Sales.Units Sold)\",\"NativeReferenceName\":\"Sum of Units Sold\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a1\"}},\"Property\":\"Product Name\"},\"Name\":\"Apocolypse Store.Product Name\",\"NativeReferenceName\":\"Product Name\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Name\":\"Variation\",\"Property\":\"Date Purchased\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Day\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"valueAxis\":[{\"properties\":{\"titleText\":{\"expr\":{\"Literal\":{\"Value\":\"'Units Sold'\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Products Sold by Day '\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 392.95,
+          "width": 616.66,
+          "x": 9.73,
+          "y": 0.00,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Total Products Sold by State",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "b4453bc9f9fe711c13e9",
+      "ordinal": 4,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"512f4fb10e213d829135\",\"layouts\":[{\"id\":0,\"position\":{\"x\":9.72644376899696,\"y\":0,\"z\":0,\"width\":757.6899696048632,\"height\":611.7933130699089,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"donutChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Customer Buyer Information.State\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(Apocolypse Sales.Units Sold)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"Apocolypse Sales\",\"Type\":0},{\"Name\":\"c\",\"Entity\":\"Customer Buyer Information\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Units Sold\"}},\"Function\":0},\"Name\":\"Sum(Apocolypse Sales.Units Sold)\",\"NativeReferenceName\":\"Sum of Units Sold\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"State\"},\"Name\":\"Customer Buyer Information.State\",\"NativeReferenceName\":\"State\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Units Sold\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'inside'\"}}},\"labelStyle\":{\"expr\":{\"Literal\":{\"Value\":\"'Category, data value, percent of total'\"}}}}}],\"legend\":[{\"properties\":{\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'RightCenter'\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Total Products Sold by State'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 611.79,
+          "width": 757.69,
+          "x": 9.73,
+          "y": 0.00,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Products Sold by State",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "bc7ebef3dd1f18251aea",
+      "ordinal": 6,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"36981520e35c741d5359\",\"layouts\":[{\"id\":0,\"position\":{\"x\":9.72644376899696,\"y\":0,\"z\":0,\"width\":1162.310030395137,\"height\":681.823708206687,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"filledMap\",\"projections\":{\"Category\":[{\"queryRef\":\"Customer Buyer Information.State\",\"active\":true}],\"Tooltips\":[{\"queryRef\":\"Sum(Apocolypse Sales.Units Sold)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Customer Buyer Information\",\"Type\":0},{\"Name\":\"a\",\"Entity\":\"Apocolypse Sales\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"State\"},\"Name\":\"Customer Buyer Information.State\",\"NativeReferenceName\":\"State\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Units Sold\"}},\"Function\":0},\"Name\":\"Sum(Apocolypse Sales.Units Sold)\",\"NativeReferenceName\":\"Sum of Units Sold\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"dataPoint\":[{\"properties\":{\"fillRule\":{\"linearGradient2\":{\"min\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'minColor'\"}}}},\"max\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'maxColor'\"}}}},\"nullColoringStrategy\":{\"strategy\":{\"expr\":{\"Literal\":{\"Value\":\"'asZero'\"}}}}}},\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":8,\"Percent\":0}}}}}}}],\"mapStyles\":[{\"properties\":{\"showLabels\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"mapTheme\":{\"expr\":{\"Literal\":{\"Value\":\"'canvasDark'\"}}}}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"visualHeader\":[{\"properties\":{\"background\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0.2}}}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"visualTooltip\":[{\"properties\":{\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'Canvas'\"}}},\"themedBackground\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":8,\"Percent\":0}}}}}}}],\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"25D\"}}}}}],\"general\":[{\"properties\":{\"keepLayerOrder\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Products Sold by State'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 681.82,
+          "width": 1162.31,
+          "x": 9.73,
+          "y": 0.00,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "ALL KPI",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "f131fea7e2bc3a598759",
+      "ordinal": 7,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"1daa0f33dacba8106335\",\"layouts\":[{\"id\":0,\"position\":{\"x\":419.209726443769,\"y\":0,\"z\":2000,\"width\":220.790273556231,\"height\":111.85410334346506,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(Customer Buyer Information.Total Purchased)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Customer Buyer Information\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Total Purchased\"}},\"Function\":0},\"Name\":\"Sum(Customer Buyer Information.Total Purchased)\",\"NativeReferenceName\":\"Sum of Total Purchased\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Total Purchased\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"43D\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Total Income'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"22D\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 111.85,
+          "width": 220.79,
+          "x": 419.21,
+          "y": 0.00,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"8384bc7fd6a6b3917706\",\"layouts\":[{\"id\":0,\"position\":{\"x\":188.69300911854103,\"y\":0,\"z\":1000,\"width\":246.0790273556231,\"height\":111.85410334346506,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(Apocolypse Store.Production Cost)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"Apocolypse Store\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Production Cost\"}},\"Function\":0},\"Name\":\"Sum(Apocolypse Store.Production Cost)\",\"NativeReferenceName\":\"Sum of Production Cost\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Production Cost\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"43D\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Production Cost'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"22D\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 111.85,
+          "width": 246.08,
+          "x": 188.69,
+          "y": 0.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"cce08d316deb2f262529\",\"layouts\":[{\"id\":0,\"position\":{\"x\":632.2188449848024,\"y\":0,\"z\":3000,\"width\":213.00911854103344,\"height\":111.85410334346506,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Apocolypse Store.Total Profit\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"Apocolypse Store\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Profit\"},\"Name\":\"Apocolypse Store.Total Profit\",\"NativeReferenceName\":\"Total Profit\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Profit\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"43D\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Profit'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"22D\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 111.85,
+          "width": 213.01,
+          "x": 632.22,
+          "y": 0.00,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"f27d0ee52f816510b66e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":0,\"width\":188.69300911854103,\"height\":104.07294832826749,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(Apocolypse Sales.Units Sold)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"Apocolypse Sales\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Units Sold\"}},\"Function\":0},\"Name\":\"Sum(Apocolypse Sales.Units Sold)\",\"NativeReferenceName\":\"Sum of Units Sold\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Units Sold\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"43D\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Units Sold'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"22D\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#00B2F1'\"}}}}}}}],\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 104.07,
+          "width": 188.69,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Selling Price and Production Cost by Product ",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "f1c524cd7cc8a06dc8f7",
+      "ordinal": 3,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"c6d3fd154fb4d5376eb0\",\"layouts\":[{\"id\":0,\"position\":{\"x\":9.72644376899696,\"y\":0,\"z\":0,\"width\":604.984802431611,\"height\":517.4468085106383,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"lineClusteredColumnComboChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Apocolypse Store.Product Name\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(Apocolypse Store.Price)\"}],\"Y2\":[{\"queryRef\":\"Sum(Apocolypse Store.Production Cost)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"Apocolypse Store\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Product Name\"},\"Name\":\"Apocolypse Store.Product Name\",\"NativeReferenceName\":\"Product Name\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Production Cost\"}},\"Function\":0},\"Name\":\"Sum(Apocolypse Store.Production Cost)\",\"NativeReferenceName\":\"Sum of Production Cost\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Price\"}},\"Function\":0},\"Name\":\"Sum(Apocolypse Store.Price)\",\"NativeReferenceName\":\"Sum of Price\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Price\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"valueAxis\":[{\"properties\":{\"titleText\":{\"expr\":{\"Literal\":{\"Value\":\"'Price of a Product'\"}}}}}],\"categoryAxis\":[{\"properties\":{\"titleText\":{\"expr\":{\"Literal\":{\"Value\":\"'Product'\"}}}}}],\"lineStyles\":[{\"properties\":{\"areaShow\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Selling Price and Production Cost by Product '\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 517.45,
+          "width": 604.98,
+          "x": 9.73,
+          "y": 0.00,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ],
+  "theme": "Custom6246362380015287.json"
+}

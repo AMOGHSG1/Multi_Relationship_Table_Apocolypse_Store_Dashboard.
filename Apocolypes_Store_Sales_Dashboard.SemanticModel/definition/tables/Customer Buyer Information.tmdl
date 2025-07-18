@@ -1,0 +1,69 @@
+table 'Customer Buyer Information'
+	lineageTag: 29671887-9e04-4f93-a692-47dae7ba08dd
+
+	column 'Buyer ID'
+		dataType: int64
+		formatString: 0
+		lineageTag: ee0ec30e-5d93-4cb1-bbfb-a159c5b8e858
+		summarizeBy: count
+		sourceColumn: Buyer ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Product ID Purchased'
+		dataType: int64
+		formatString: 0
+		lineageTag: eff0a7fe-53f3-42d4-a2ef-7515c2ed34e3
+		summarizeBy: none
+		sourceColumn: Product ID Purchased
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Total Purchased'
+		dataType: int64
+		formatString: 0
+		lineageTag: f174322d-cfc8-4e4d-b192-19a3d3afbe74
+		summarizeBy: sum
+		sourceColumn: Total Purchased
+
+		annotation SummarizationSetBy = Automatic
+
+	column State
+		dataType: string
+		lineageTag: d9b2d319-3151-42cd-9432-c3b545d33798
+		summarizeBy: none
+		sourceColumn: State
+
+		annotation SummarizationSetBy = Automatic
+
+	column Age
+		dataType: int64
+		formatString: 0
+		lineageTag: c14500d6-4a13-40ca-a942-c3cadbdc8ed0
+		summarizeBy: sum
+		sourceColumn: Age
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Customer ID'
+		dataType: int64
+		formatString: 0
+		lineageTag: 020c495b-bbf8-4876-820f-cd5fe4f85f23
+		summarizeBy: count
+		sourceColumn: Customer ID
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Customer Buyer Information' = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents("C:\Users\never\OneDrive\Desktop\Multi_Table_Relationship_with_all_viualisation_dashboard\Apocolypse Food Prep - Visualizations Tutorial.xlsx"), null, true),
+				    #"Customer Buyer Information_Sheet" = Source{[Item="Customer Buyer Information",Kind="Sheet"]}[Data],
+				    #"Promoted Headers" = Table.PromoteHeaders(#"Customer Buyer Information_Sheet", [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"Buyer ID", Int64.Type}, {"Product ID Purchased", Int64.Type}, {"Total Purchased", Int64.Type}, {"State", type text}, {"Age", Int64.Type}, {"Customer ID", Int64.Type}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,74 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 399.1847511806298,
+            "y": 0
+          },
+          "nodeIndex": "Apocolypse Sales",
+          "nodeLineageTag": "f2a90bdb-ff7a-4328-8252-2aa0be207b4f",
+          "size": {
+            "height": 224,
+            "width": 234
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 50,
+            "y": -26.597387138875646
+          },
+          "nodeIndex": "Apocolypse Store",
+          "nodeLineageTag": "80589c7b-6922-4ed2-a245-19c6e6272939",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 52.361639415359832,
+            "y": 327
+          },
+          "nodeIndex": "Customer Buyer Information",
+          "nodeLineageTag": "29671887-9e04-4f93-a692-47dae7ba08dd",
+          "size": {
+            "height": 215,
+            "width": 234
+          },
+          "zIndex": 4
+        },
+        {
+          "location": {
+            "x": 709.36163941535983,
+            "y": 0
+          },
+          "nodeIndex": "Customer Information",
+          "nodeLineageTag": "bfd7fc78-fb34-4e45-834d-10c14ee78795",
+          "size": {
+            "height": 224,
+            "width": 234
+          },
+          "zIndex": 3
+        }
+      ],
+      "name": "All tables",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "All tables",
+  "defaultDiagram": "All tables"
+}
